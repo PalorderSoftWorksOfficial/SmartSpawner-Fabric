@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "smartspawner",
+  "version": "${version}",
+  "name": "SmartSpawner",
+  "description": "Fabric port of SmartSpawner — virtual spawner inventory, loot, YAML storage, admin commands (give/list/prices/near/hologram/clear), hopper export, spawner items + placement.",
+  "authors": ["Nighter", "PalorderSoftworks"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.palordersoftworks.smartspawner.SmartSpawnerFabric"
+    ]
+  },
+  "mixins": ["smartspawner.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*",
+    "fabric-permissions-api-v0": "*"
+  },
+  "suggests": {
+    "brokenstarsmp": "*",
+    "luckperms": "*"
+  }
+}

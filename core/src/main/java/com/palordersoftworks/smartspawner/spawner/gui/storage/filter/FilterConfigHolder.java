@@ -1,0 +1,21 @@
+package com.palordersoftworks.smartspawner.spawner.gui.storage.filter;
+
+import com.palordersoftworks.smartspawner.spawner.properties.SpawnerData;
+import lombok.Getter;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.InventoryHolder;
+
+@Getter
+public class FilterConfigHolder implements InventoryHolder {
+    private final SpawnerData spawnerData;
+
+    public FilterConfigHolder(SpawnerData spawnerData) {
+        this.spawnerData = spawnerData;
+    }
+
+    @Override
+    public Inventory getInventory() {
+        return null;
+    }
+
+}

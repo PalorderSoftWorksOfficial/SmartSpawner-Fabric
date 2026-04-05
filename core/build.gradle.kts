@@ -5,6 +5,14 @@ plugins {
     id("com.gradleup.shadow")
 }
 
+sourceSets {
+    named("main") {
+        java {
+            exclude("com/palordersoftworks/**")
+        }
+    }
+}
+
 val shade: Configuration by configurations.creating
 configurations {
     implementation.get().extendsFrom(shade)

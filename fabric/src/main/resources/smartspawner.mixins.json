@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "com.palordersoftworks.smartspawner.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["SpawnerBlockEntityMixin", "ServerPlayerInteractionManagerMixin"],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

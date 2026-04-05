@@ -9,7 +9,7 @@ allprojects {
     apply(plugin = "java")
     apply(plugin = "maven-publish")
 
-    group = "github.nighter"
+    group = "com.palordersoftworks.smartspawner"
     version = "1.6.5"
 
     repositories {
@@ -74,10 +74,14 @@ allprojects {
 }
 
 subprojects {
-    apply(plugin = "java-library")
+    if (name != "fabric") {
+        apply(plugin = "java-library")
+    }
 
     java {
-        withJavadocJar()
+        if (name != "fabric") {
+            withJavadocJar()
+        }
         withSourcesJar()
     }
 }

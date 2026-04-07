@@ -91,7 +91,7 @@ tasks.processResources {
 }
 
 tasks.remapJar {
-    archiveBaseName.set("SmartSpawner-Fabric")
+    archiveBaseName.set("SmartSpawner")
     archiveClassifier.set("")
 }
 
